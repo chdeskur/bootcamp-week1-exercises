@@ -1,0 +1,25 @@
+html {
+    background: white;
+}
+
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    margin: 0 auto;
+    padding: 30px 0px;
+    color: #fff;
+    background: #0087ff;
+    border: 30px solid #fff;
+}
+
+nav {
+    display: block;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+}

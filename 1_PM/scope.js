@@ -18,10 +18,16 @@ function x() {
 
 function y() {
   var a = 2;
-  console.log(a);
+  console.log(a); // will print 2
   x();
 }
 
 var a = 1;
-console.log(a);
-y();
+console.log(a); // will print 1
+y();  // will not print 2, a's assignment is not in scope
+
+// print statement: 
+// 1 
+// 2
+// undefined
+

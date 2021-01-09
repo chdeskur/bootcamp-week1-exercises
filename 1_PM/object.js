@@ -10,7 +10,17 @@ const assert = require('assert')
  */
 
 const hasFalsyValue = obj => {
-};
+    if (Object.values(obj).length == 1) {
+      return !Object.values(obj)[0]
+    } else {
+      for (const prop in obj) {
+        if (hasFalsyValue(obj[prop]) == true) {
+          return true
+        }
+      }
+      return false
+    }
+  }
 
 const falsyObj = {
   hi: "I am falsy somewhere...",
